@@ -1,7 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
-import { AmbientScene } from '@/components/AmbientScene'
+import { AmbientScene } from '../components/AmbientScene'
 
 export const metadata: Metadata = {
   title: 'Sunny Software Solutions — Build what’s next.',
