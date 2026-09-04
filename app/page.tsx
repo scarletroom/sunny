@@ -8,6 +8,7 @@ import { Process } from '@/components/Process'
 import { About } from '@/components/About'
 import { Testimonials } from '@/components/Testimonials'
 import { FAQ } from '@/components/FAQ'
+import { Contact, FinalCTA, SiteFooter, SunnyBot } from '@/components/FinalSections'
 
 export default function Page() {
   return (
@@ -23,7 +24,11 @@ export default function Page() {
         <About />
         <Testimonials />
         <FAQ />
+        <FinalCTA />
+        <Contact />
       </main>
+      <SiteFooter />
+      <SunnyBot />
     </>
   )
 }

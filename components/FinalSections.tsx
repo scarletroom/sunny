@@ -1,0 +1,17 @@
+import { ArrowUpRight, Bot, Check, Mail, MapPin, Phone } from 'lucide-react'
+
+export function FinalCTA() {
+  return <section id="contact" className="final-cta"><div className="page-shell"><p className="eyebrow">Next move</p><h2>Ready to Build Something <span className="text-gradient">Remarkable?</span></h2><p>Bring us the challenge. We’ll bring a sharp team, thoughtful engineering, and a product built to move your business forward.</p><a className="button button-primary" href="#contact-form">Start Your Project <ArrowUpRight size={15} /></a></div></section>
+}
+
+export function Contact() {
+  return <section id="contact-form" className="contact-section"><div className="page-shell contact-grid"><div><p className="eyebrow">Contact</p><h2>Let’s build your <span className="text-gradient">next advantage.</span></h2><p className="contact-intro">Tell us what you’re working toward and we’ll reply with a clear next step.</p><div className="contact-details"><span><Mail size={15} /> hello@sunnysoftware.dev</span><span><Phone size={15} /> +1 (415) 555-0148</span><span><MapPin size={15} /> Remote-first · North America / Europe</span></div></div><form className="contact-form"><div className="form-row"><label>Name<input name="name" required /></label><label>Email<input name="email" type="email" required /></label></div><div className="form-row"><label>Company<input name="company" /></label><label>Phone<input name="phone" /></label></div><div className="form-row"><label>Project Type<select name="projectType" defaultValue=""><option value="" disabled>Select a type</option><option>New product</option><option>Business software</option><option>AI integration</option><option>Mobile application</option></select></label><label>Budget<select name="budget" defaultValue=""><option value="" disabled>Select a range</option><option>$10k–$25k</option><option>$25k–$75k</option><option>$75k+</option></select></label></div><label>Message<textarea name="message" rows={5} required placeholder="What are you building or improving?" /></label><button className="button button-primary" type="submit">Send Project Brief <ArrowUpRight size={15} /></button><small className="form-note"><Check size={13} /> Your details stay private.</small></form></div></section>
+}
+
+export function SiteFooter() {
+  return <footer className="site-footer"><div className="page-shell footer-grid"><div><a className="brand" href="#top"><span className="brand-mark">S/</span><span>Sunny <span className="brand-accent">Software</span></span></a><p>Software for teams with something important to build.</p></div><div className="footer-col"><strong>Explore</strong><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a></div><div className="footer-col"><strong>Company</strong><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><div className="footer-col"><strong>Connect</strong><a href="mailto:hello@sunnysoftware.dev">Email us</a><a href="#contact-form">Start a project</a></div></div><div className="page-shell footer-bottom"><span>© 2026 Sunny Software Solutions. All rights reserved.</span><span>Build what’s next.</span></div></footer>
+}
+
+export function SunnyBot() {
+  return <button className="sunny-bot" type="button" aria-label="Open SunnyBot assistant"><span className="sunny-bot-icon"><Bot size={20} /></span><span><strong>SunnyBot</strong><small>Your software guide</small></span><i /></button>
+}
