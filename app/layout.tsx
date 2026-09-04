@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import { AmbientScene } from '@/components/AmbientScene'
 
 export const metadata: Metadata = {
   title: 'Sunny Software Solutions — Build what’s next.',
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className="dark bg-background">
       <body className="antialiased">
+        <AmbientScene />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
