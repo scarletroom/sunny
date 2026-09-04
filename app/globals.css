@@ -46,8 +46,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .page-shell { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
 .site-header { position: fixed; inset: 0 0 auto; z-index: 20; border-bottom: 1px solid rgba(154,177,214,.1); background: rgba(5,7,13,.78); backdrop-filter: blur(18px); }
 .nav-shell { display: flex; height: 64px; align-items: center; justify-content: space-between; gap: 24px; width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
-.brand { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; letter-spacing: -.03em; white-space: nowrap; }
-.brand-mark { display: grid; width: 28px; height: 28px; place-items: center; border: 1px solid rgba(85,221,255,.6); border-radius: 8px; color: var(--cyan); font-family: var(--font-code); font-size: 13px; box-shadow: 0 0 22px rgba(85,221,255,.15); }
+.brand { display: inline-flex; align-items: center; gap: 10px; white-space: nowrap; }
+.brand-symbol { position: relative; display: grid; width: 30px; height: 30px; place-items: center; overflow: hidden; border: 1px solid rgba(85,221,255,.6); border-radius: 8px; color: var(--cyan); background: #091421; box-shadow: 0 0 22px rgba(85,221,255,.15); }
+.brand-sun { position: absolute; width: 17px; height: 17px; border: 1px solid rgba(85,221,255,.7); border-radius: 50%; background: rgba(85,221,255,.08); box-shadow: 0 0 12px rgba(85,221,255,.25); }
+.brand-sun::before, .brand-sun::after { content: ''; position: absolute; inset: -5px 7px; border-top: 1px solid rgba(57,226,155,.65); border-bottom: 1px solid rgba(57,226,155,.65); transform: rotate(45deg); }
+.brand-sun::after { transform: rotate(-45deg); border-color: rgba(102,140,255,.65); }
+.brand-monogram { position: relative; z-index: 1; color: #e8f7ff; font: 700 8px var(--font-code); letter-spacing: -.12em; text-shadow: 0 0 7px var(--cyan); }
+.brand-lockup { display: flex; flex-direction: column; gap: 2px; }
+.brand-name { color: #eaf4ff; font-size: 13px; font-weight: 800; line-height: 1; letter-spacing: .11em; }
+.brand-subname { color: var(--cyan); font: 700 7px/1 var(--font-code); letter-spacing: .08em; }
 .brand-accent { color: var(--cyan); }
 .desktop-nav { display: flex; align-items: center; gap: 26px; margin-left: auto; }
 .nav-link { color: #8491a6; font-size: 12px; transition: color .2s ease; }

@@ -17,8 +17,8 @@ export function Navbar() {
     <header className="site-header">
       <nav className="nav-shell" aria-label="Primary navigation">
         <a className="brand" href="/" aria-label="Sunny Software Solutions home">
-          <span className="brand-mark" aria-hidden="true">S</span>
-          <span>Sunny<span className="brand-accent"> Software</span></span>
+          <span className="brand-symbol" aria-hidden="true"><span className="brand-sun" /><span className="brand-monogram">SSS</span></span>
+          <span className="brand-lockup"><span className="brand-name">SUNNY</span><span className="brand-subname">SOFTWARE SOLUTIONS</span></span>
         </a>
 
         <div className="desktop-nav">
