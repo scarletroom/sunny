@@ -5,6 +5,7 @@ import { Results } from '@/components/Results'
 import { Industries } from '@/components/Industries'
 import { Projects } from '@/components/Projects'
 import { Process } from '@/components/Process'
+import { About } from '@/components/About'
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
         <Industries />
         <Projects />
         <Process />
+        <About />
       </main>
     </>
   )
