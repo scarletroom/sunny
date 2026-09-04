@@ -3,6 +3,7 @@ import { Navbar } from '@/components/Navbar'
 import { Services } from '@/components/Services'
 import { Results } from '@/components/Results'
 import { Industries } from '@/components/Industries'
+import { Expertise } from '@/components/Expertise'
 import { Projects } from '@/components/Projects'
 import { Process } from '@/components/Process'
 import { About } from '@/components/About'
@@ -19,6 +20,7 @@ export default function Page() {
         <Services />
         <Results />
         <Industries />
+        <Expertise />
         <Projects />
         <Process />
         <About />
